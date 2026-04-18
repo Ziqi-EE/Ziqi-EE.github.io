@@ -19,3 +19,5 @@ image: "/assets/images/publications/example.jpg"
 ```
 
 论文和专利展示区已经为每条记录预留左侧图片位置，后续添加图片时无需改动页面布局代码。
+
+# 如果改动了任何东西 左侧这个分支会提示
