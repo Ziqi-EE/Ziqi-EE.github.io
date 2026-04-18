@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign profile = site.data.profile %}
+<section class="home-hero">
+  <div class="home-hero__media" aria-hidden="true">
+    <img src="{{ profile.hero_image }}" alt="">
+  </div>
+  <div class="home-hero__overlay" aria-hidden="true"></div>
+  <div class="container home-hero__content">
+    <p class="eyebrow">{{ profile.department }}</p>
+    <h1>{{ profile.name }}</h1>
+    <p>{{ profile.role }}, {{ profile.affiliation }}</p>
+    <div class="hero-actions" aria-label="Primary links">
+      {% for link in profile.links %}
+        <a class="{% if forloop.first %}button button--primary{% else %}button button--light{% endif %}" href="{{ link.url | relative_url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{{ content }}

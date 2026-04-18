@@ -1,3 +1,12 @@
 title: Song Ziqi
-description: PhD Student | Nankai University | Micro/Nano Devices
-theme: jekyll-theme-minimal
+description: PhD Student at Nankai University, working on micro/nano devices and device physics.
+url: "https://ziqi-ee.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md

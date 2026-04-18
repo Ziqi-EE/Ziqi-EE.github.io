@@ -1,0 +1,24 @@
+<article class="media-card">
+  <div class="media-card__visual">
+    {% if patent.image and patent.image != "" %}
+      <img src="{{ patent.image | relative_url }}" alt="{{ patent.image_alt | default: patent.title }}">
+    {% else %}
+      <div class="image-slot image-slot--patent">
+        <span>Patent Image</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="media-card__body">
+    <p class="item-meta">{{ patent.year }} · {{ patent.type }}</p>
+    <h3>{{ patent.title }}</h3>
+    <p>{{ patent.inventors }}</p>
+    <p class="fine-print">Patent Number: {{ patent.number }}</p>
+    {% if patent.links and patent.links.size > 0 %}
+      <div class="item-links">
+        {% for link in patent.links %}
+          <a href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

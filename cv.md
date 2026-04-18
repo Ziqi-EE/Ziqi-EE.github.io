@@ -1,20 +1,14 @@
 ---
 layout: page
-title: About
-permalink: /about/
-eyebrow: Biography
-description: Song Ziqi is a PhD student in Electronic Science and Technology at Nankai University.
+title: CV
+permalink: /cv/
+eyebrow: Curriculum Vitae
+description: A concise academic overview.
 ---
 
 {% assign profile = site.data.profile %}
 
 <div class="split">
-  <div class="prose">
-    <h2>Biography</h2>
-    <p>{{ profile.summary }}</p>
-    <p>My current work is centered on micro/nano-scale electronic devices and related research topics in electronics and device physics.</p>
-  </div>
-
   <div>
     <p class="section-kicker">Education</p>
     <ul class="timeline">
@@ -22,6 +16,18 @@ description: Song Ziqi is a PhD student in Electronic Science and Technology at 
         <li>
           <strong>{{ item.degree }}</strong>
           <span>{{ item.institution }} · {{ item.period }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div>
+    <p class="section-kicker">Research Areas</p>
+    <ul class="timeline">
+      {% for item in site.data.research limit:5 %}
+        <li>
+          <strong>{{ item.title }}</strong>
+          <span>{{ item.summary }}</span>
         </li>
       {% endfor %}
     </ul>

@@ -1,0 +1,21 @@
+name: Song Ziqi
+role: PhD Student
+department: Electronic Science and Technology
+affiliation: Nankai University
+location: Tianjin, China
+hero_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80"
+summary: "I work on micro/nano-scale electronic devices, with interests in device design, fabrication, physical mechanisms, and functional electronic materials."
+education:
+  - degree: PhD in Electronic Science and Technology
+    institution: Nankai University
+    period: Current
+  - degree: B.Eng. in Microelectronics Science and Engineering
+    institution: Anhui University
+    period: Previous
+links:
+  - label: Publications
+    url: /publications/
+  - label: Research
+    url: /research/
+  - label: Contact
+    url: /contact/

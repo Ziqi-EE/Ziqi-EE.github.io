@@ -1,0 +1,30 @@
+- title: Micro/Nano Devices
+  summary: "Design, fabrication, and characterization of micro/nano-scale electronic devices."
+  tags:
+    - Fabrication
+    - Characterization
+    - Device Structure
+- title: Device Physics
+  summary: "Transport mechanisms, interface effects, and structure-property relationships in functional devices."
+  tags:
+    - Transport
+    - Interfaces
+    - Mechanisms
+- title: Molecular Electronics
+  summary: "Electronic behavior and physical properties of molecular-scale systems and junctions."
+  tags:
+    - Single-Molecule Junctions
+    - Charge Transport
+    - Materials
+- title: Functional Electronic Materials
+  summary: "Materials and device platforms for emerging electronic and optoelectronic applications."
+  tags:
+    - Functional Materials
+    - Optoelectronics
+    - Integration
+- title: Novel Device Structures
+  summary: "Emerging architectures that connect material properties with device-level performance."
+  tags:
+    - Architecture
+    - Performance
+    - Applications

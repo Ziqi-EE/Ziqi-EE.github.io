@@ -1,0 +1,29 @@
+<article class="media-card">
+  <div class="media-card__visual">
+    {% if publication.image and publication.image != "" %}
+      <img src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | default: publication.title }}">
+    {% else %}
+      <div class="image-slot">
+        <span>Paper Image</span>
+      </div>
+    {% endif %}
+  </div>
+  <div class="media-card__body">
+    <p class="item-meta">{{ publication.year }} · {{ publication.venue }}</p>
+    <h3>{{ publication.title }}</h3>
+    <p>{{ publication.authors }}</p>
+    {% if publication.note %}
+      <p class="fine-print">{{ publication.note }}</p>
+    {% endif %}
+    <div class="item-links">
+      {% if publication.doi %}
+        <a href="https://doi.org/{{ publication.doi }}">DOI: {{ publication.doi }}</a>
+      {% endif %}
+      {% for link in publication.links %}
+        {% unless link.label == "DOI" %}
+          <a href="{{ link.url }}">{{ link.label }}</a>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</article>
