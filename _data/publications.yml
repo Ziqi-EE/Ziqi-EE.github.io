@@ -9,3 +9,30 @@
   links:
     - label: DOI
       url: "https://doi.org/10.1007/s12598-024-03127-4"
+- title: "Single-Molecule Electronic Biosensors: Principles and Applications"
+  authors: "Xinyue Chang, Yani Huo, Cong Zhao, Wanqi Sun, Ziqi Song, Ziyuan Qi, Jinying Wang,*Chuancheng Jia,* and Xuefeng Guo*"
+  venue: "Advanced Sensor Research"
+  year: 2023
+  note: "* corresponding author"
+  doi: "10.1002/adsr.202200084"
+  image: ""
+  image_alt: "Publication figure"
+  links: []
+- title: "Energy conversion and transport in molecular-scale junctions"
+  authors: "Haixin Zhang†, Yunxuan Zhu†, Ping Duan†, Mehrdad Shiri, Sai Yelishala, Shaocheng Shen, Ziqi Song, Chuancheng Jia*, Xuefeng Guo*, Longji Cui*, and Kun Wang*"
+  venue: "Applied Physics Reviews"
+  year: 2024
+  note: "† Equal contribution; * corresponding author."
+  doi: "10.1063/5.0225756"
+  image: ""
+  image_alt: "Publication figure"
+  links: []
+- title: "Effect of hydrogen migration on the electronic structure of phenol derivatives observed by single-molecule conductance"
+  authors: "Xiao Wei, Mingliang Li*,  Xinyue Chang, Ziqi Song, Ping Duan*, Chuancheng Jia*, and Xuefeng Guo*"
+  venue: "Nature Communications"
+  year: 2025
+  note: "* corresponding author"
+  doi: "0.1038/s41467-025-65886-7"
+  image: ""
+  image_alt: "Publication figure"
+  links: []
