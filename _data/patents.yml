@@ -3,7 +3,7 @@
   type: "Invention Patent"
   number: "ZL 2025 1 0131785.4"
   year: 2025
-  image: ""
+  image: "/assets/images/patents/4.jpg"
   image_alt: "Patent image"
   links: []
 - title: "基于单磷光分子场效应管的单光子源及其制备方法"
@@ -11,6 +11,6 @@
   type: "Invention Patent"
   number: "ZL 2023 1 1004746.5"
   year: 2023
-  image: ""
+  image: "/assets/images/patents/5.jpg"
   image_alt: "Patent image"
   links: []
