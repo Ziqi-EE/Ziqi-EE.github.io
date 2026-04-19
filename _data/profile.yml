@@ -3,7 +3,7 @@ role: PhD Student
 department: Electronic Science and Technology
 affiliation: Nankai University
 location: Tianjin, China
-hero_image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80"
+hero_image: "/assets/images/photo1.jpg"
 summary: "I work on micro/nano-scale electronic devices, with interests in device design, fabrication, physical mechanisms, and functional electronic materials."
 education:
   - degree: PhD in Electronic Science and Technology
