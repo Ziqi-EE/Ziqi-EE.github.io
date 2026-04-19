@@ -11,7 +11,13 @@
   <div class="media-card__body">
     <p class="item-meta">{{ publication.year }} · {{ publication.venue }}</p>
     <h3>{{ publication.title }}</h3>
-    <p>{{ publication.authors }}</p>
+    {% assign highlighted_authors = publication.authors %}
+    {% assign highlighted_authors = highlighted_authors | replace: "宋子琦", "<strong>宋子琦</strong>" %}
+    {% assign highlighted_authors = highlighted_authors | replace: "Song Ziqi", "<strong>Song Ziqi</strong>" %}
+    {% assign highlighted_authors = highlighted_authors | replace: "Song ziqi", "<strong>Song ziqi</strong>" %}
+    {% assign highlighted_authors = highlighted_authors | replace: "Ziqi Song", "<strong>Ziqi Song</strong>" %}
+    {% assign highlighted_authors = highlighted_authors | replace: "Zi-Qi Song", "<strong>Zi-Qi Song</strong>" %}
+    <p>{{ highlighted_authors }}</p>
     {% if publication.note %}
       <p class="fine-print">{{ publication.note }}</p>
     {% endif %}

@@ -11,7 +11,13 @@
   <div class="media-card__body">
     <p class="item-meta">{{ patent.year }} · {{ patent.type }}</p>
     <h3>{{ patent.title }}</h3>
-    <p>{{ patent.inventors }}</p>
+    {% assign highlighted_inventors = patent.inventors %}
+    {% assign highlighted_inventors = highlighted_inventors | replace: "宋子琦", "<strong>宋子琦</strong>" %}
+    {% assign highlighted_inventors = highlighted_inventors | replace: "Song Ziqi", "<strong>Song Ziqi</strong>" %}
+    {% assign highlighted_inventors = highlighted_inventors | replace: "Song ziqi", "<strong>Song ziqi</strong>" %}
+    {% assign highlighted_inventors = highlighted_inventors | replace: "Ziqi Song", "<strong>Ziqi Song</strong>" %}
+    {% assign highlighted_inventors = highlighted_inventors | replace: "Zi-Qi Song", "<strong>Zi-Qi Song</strong>" %}
+    <p>{{ highlighted_inventors }}</p>
     <p class="fine-print">Patent Number: {{ patent.number }}</p>
     {% if patent.links and patent.links.size > 0 %}
       <div class="item-links">

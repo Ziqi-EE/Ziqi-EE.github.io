@@ -330,6 +330,11 @@ a:hover {
   color: var(--muted);
 }
 
+.media-card strong {
+  color: var(--ink);
+  font-weight: 800;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
